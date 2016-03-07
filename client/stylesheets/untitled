@@ -1,0 +1,13 @@
+*{
+	font-family: sans-serif;
+}
+#container{
+	margin-left: 30px;
+	margin-top: 40px;
+	width: 900px;
+}
+#newAppointment{
+	margin-left: 30px;
+	margin-top: 40px;
+	width: 500px;
+}

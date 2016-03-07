@@ -1,0 +1,15 @@
+<div ng-controller='appointmentsController'>
+	<div id='newAppointment'>
+		<h2>New Appointment</h2>
+		<form>
+			Date: <input type='date' ng-model='newAppointment.date' class='form-control'><br>
+			Time: <input type='time' ng-model='newAppointment.time' class='form-control'><br>
+			<p style='vertical-align:top'>Complain: <textarea rows='8' ng-model='newAppointment.complain' class='form-control'></textarea></p>
+			<a href='#/appointment/new' class='btn btn-info pull-right' ng-click='addAppointment()'>Add Appointment</a>
+			<a href="#/" class='btn btn-warning pull-right'>Cancel</a>
+			<div ng-repeat='message in errorMessages'>
+				<p style='color:red;' ng-bind='message'></p>
+			</div>
+		</form>
+	</div>
+</div>
